@@ -1,5 +1,4 @@
 import pandas as pd
-
 # Load datasets
 train = pd.read_csv("train.csv")
 test = pd.read_csv("test.csv")
@@ -24,7 +23,6 @@ plt.tight_layout()
 plt.show()
 
 import seaborn as sns
-
 plt.figure(figsize=(12, 6))
 sns.boxplot(data=train[['Age', 'Fare']])
 plt.title("Boxplot of Age and Fare")
@@ -57,5 +55,6 @@ Observations:
 4. Small families (1–2 members) survived more than large families or people traveling alone.
 5. 'Cabin' has too many missing values and might need to be dropped or processed.
 """)
+
 
 
